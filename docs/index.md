@@ -11,7 +11,7 @@ hero:
       link: /introduction
     - theme: alt
       text: View on GitHub
-      link: https://github.com/ozanoguz/aws-fortigate-hol
+      link: https://github.com/ozanoguz/fgt-aws-hol
 
 features:
   - title: FortiGate on AWS

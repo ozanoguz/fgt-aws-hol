@@ -48,7 +48,7 @@ export default defineConfig({
     socialLinks: [
       {
         icon: 'github',
-        link: 'https://github.com/ozanoguz/aws-fortigate-hol'
+        link: 'https://github.com/ozanoguz/fgt-aws-hol'
       }
     ],
 
