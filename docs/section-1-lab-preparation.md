@@ -1,10 +1,21 @@
+
+## `docs/section-1-lab-preparation.md`
+
+```markdown
 # Section 1: Lab Preparation
 
-## 1.1 Access the AWS Console
+## 1.1 Retrieve Your Lab Credentials
 
-Log in to the AWS Management Console using the workshop access information.
+Open the [Lab Credential Portal](YOUR_LAMBDA_FUNCTION_URL).
 
-[Access the AWS Management Console](https://174296440058.signin.aws.amazon.com/console)
+Enter:
+
+- The shared **Lab access key** provided by the instructor
+- Your assigned **Student ID**, for example `student01`
+
+Select **Show my credentials**.
+
+The portal displays only the credential record assigned to your Student ID.
 
 Keep the credential page open during the lab. You will use the following values:
 
@@ -12,41 +23,65 @@ Keep the credential page open during the lab. You will use the following values:
 |---|---|
 | AWS account ID | AWS Console sign-in |
 | IAM username | AWS Console sign-in |
-| Console password | AWS Console sign-in |
+| AWS Console password | AWS Console sign-in |
 | AWS access key ID | AWS CLI or API authentication |
 | AWS secret access key | AWS CLI or API authentication |
 
-::: info
-Use the student account assigned to you for this workshop.
+::: danger Important
+Use only the credentials assigned to your Student ID.
+
+Do not share, photograph, copy to an unsecured location, or reuse these credentials outside this lab.
 :::
 
-## 1.2 Create an SSH Key Pair
+::: tip
+Use the **Copy** button beside a credential when available to avoid typing errors.
+:::
+
+## 1.2 Access the AWS Console
+
+Open the AWS Management Console:
+
+[Access the AWS Management Console](https://174296440058.signin.aws.amazon.com/console)
+
+Log in using the values displayed in the credential portal:
+
+| AWS sign-in field | Credential portal value |
+|---|---|
+| Account ID | AWS account ID |
+| IAM user name | IAM username |
+| Password | AWS Console password |
+
+::: info
+Use only the student account assigned to you for this workshop.
+:::
+
+After signing in, confirm that the selected AWS Region is **Cape Town (`af-south-1`)**.
+
+![Select the AWS Cape Town Region](/images/selectregion.jpg)
+
+## 1.3 Create an SSH Key Pair
 
 You need an SSH key pair to securely access the EC2 instances deployed in the spoke VPCs.
 
-1. Confirm that the selected AWS Region is **Cape Town (`af-south-1`)**.
-
-   ![Select the AWS Cape Town Region](/images/selectregion.jpg)
-
-2. In the AWS Console search bar, enter **Key pairs**, and open **EC2 > Key pairs**.
+1. In the AWS Console search bar, enter **Key pairs**, and open **EC2 > Key pairs**.
 
    ![Search for EC2 key pairs](/images/selectkeypairs.jpg)
 
-3. Select **Create key pair**.
+2. Select **Create key pair**.
 
-4. Configure the key pair:
+3. Configure the key pair:
 
    | Setting | Value |
    |---|---|
-   | Name | `Student01-key` or your assigned student ID |
+   | Name | Your Student ID followed by `-key`, for example `student01-key` |
    | Key pair type | RSA |
    | Private key file format | `.pem` |
 
    ![Create the EC2 key pair](/images/createkeypair.jpg)
 
-5. Select **Create key pair**.
+4. Select **Create key pair**.
 
-6. The `.pem` file downloads automatically. Store it securely.
+5. The `.pem` file downloads automatically. Store it securely.
 
 ::: danger Important
 AWS does not allow the private key file to be downloaded again after creation.
@@ -59,11 +94,4 @@ You can use Windows OpenSSH directly with the `.pem` file. PuTTY users may need 
 On macOS or Linux, restrict access to the private key:
 
 ```bash
-chmod 400 Student01-key.pem
-```
-
-You will select this key pair during the CloudFormation deployment.
-
-## Next Step
-
-Continue to [Section 2: Deployment and Provisioning](/section-2-deployment).
+chmod 400 student01-key.pem

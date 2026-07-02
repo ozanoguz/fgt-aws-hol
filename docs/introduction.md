@@ -16,6 +16,38 @@ AWS Transit Gateway provides connectivity between the FortiGate security hub and
 This environment is prepared specifically for hands-on workshop purposes. Do not use it in production without additional security review and hardening.
 :::
 
+## Lab Credentials
+
+Each student is assigned an individual set of temporary AWS credentials.
+
+Before starting the lab:
+
+1. Open the [Lab Credential Portal](https://oe4inoootpmwha6h46gxljxlvu0aclyr.lambda-url.eu-central-1.on.aws/).
+2. Enter the shared **Lab access key** provided by the instructor.
+3. Enter your assigned **Student ID**, for example `student01`.
+4. Select **Show my credentials**.
+5. Keep the credential page open during the lab.
+
+The portal displays only the credentials assigned to the submitted Student ID.
+
+The credential set includes:
+
+- AWS account ID
+- IAM username
+- AWS Console password
+- AWS access key ID
+- AWS secret access key
+
+::: danger Important
+Use only the credentials assigned to your Student ID.
+
+Do not share, photograph, copy to an unsecured location, or reuse these credentials outside this lab.
+:::
+
+::: info
+The credentials are temporary and may stop working after the workshop access period ends.
+:::
+
 ## Lab Architecture
 
 The CloudFormation template automates the deployment of the following components:
@@ -31,7 +63,7 @@ The CloudFormation template automates the deployment of the following components
 
 ## Lab Sections
 
-1. Prepare the AWS environment and create an SSH key pair.
+1. Retrieve your lab credentials, access AWS, and create an SSH key pair.
 2. Subscribe to the FortiGate BYOL AMI and deploy the lab.
 3. Log in to, license, and verify the FortiGate-VM.
 4. Configure the FortiGate AWS SDN connector.
@@ -40,12 +72,7 @@ The CloudFormation template automates the deployment of the following components
 
 ## AWS Region
 
-The lab is deployed in the AWS West Europe Region:
+The lab is deployed in the AWS Cape Town Region:
 
 ```text
-eu-central-1
-```
-
-## Start the Lab
-
-Continue to [Section 1: Lab Preparation](/section-1-lab-preparation).
+af-south-1
