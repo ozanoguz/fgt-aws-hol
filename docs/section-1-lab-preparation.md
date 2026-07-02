@@ -6,7 +6,15 @@ Log in to the AWS Management Console using the workshop access information.
 
 [Access the AWS Management Console](https://174296440058.signin.aws.amazon.com/console)
 
-[Access the Lab Credentials](https://docs.google.com/)
+Keep the credential page open during the lab. You will use the following values:
+
+| Credential | Used for |
+|---|---|
+| AWS account ID | AWS Console sign-in |
+| IAM username | AWS Console sign-in |
+| Console password | AWS Console sign-in |
+| AWS access key ID | AWS CLI or API authentication |
+| AWS secret access key | AWS CLI or API authentication |
 
 ::: info
 Use the student account assigned to you for this workshop.
