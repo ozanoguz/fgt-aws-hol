@@ -40,10 +40,10 @@ The CloudFormation template automates the deployment of the following components
 
 ## AWS Region
 
-The lab is deployed in the AWS Cape Town Region:
+The lab is deployed in the AWS West Europe Region:
 
 ```text
-af-south-1
+eu-central-1
 ```
 
 ## Start the Lab
