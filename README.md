@@ -2,7 +2,7 @@
 
 **⚠️ DISCLAIMER: This environment is prepared specifically for hands-on workshop purposes. Do not use for production without additional hardening.**
 
-This lab guide describes how to protect distributed cloud workloads using a **Centralized Security Hub** architecture. You will deploy a **FortiGate-VM** to inspect North/South (Internet) and East/West traffic for multiple Spoke VPCs using an **AWS Transit Gateway (TGW)**.
+This lab guide describes how to protect distributed cloud workloads using a **Centralized Security sHub** architecture. You will deploy a **FortiGate-VM** to inspect North/South (Internet) and East/West traffic for multiple Spoke VPCs using an **AWS Transit Gateway (TGW)**.
 
 ---
 
