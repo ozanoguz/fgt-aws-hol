@@ -6,14 +6,14 @@ This hands-on lab demonstrates how to protect distributed AWS workloads using a 
 
 You will deploy a FortiGate-VM to inspect:
 
-- North-south Internet traffic
+- Egress traffic from workload VPCs to the Internet
 - East-west traffic between workload VPCs
-- Inbound traffic from the Internet
+- Ingress traffic from the Internet to published workload services
 
 AWS Transit Gateway provides connectivity between the FortiGate security hub and the workload VPCs.
 
 ::: warning Disclaimer
-This environment is prepared specifically for hands-on workshop purposes. Do not use it in production without additional security review and hardening.
+This environment is intended only for hands-on workshops and demonstrations. Do not use it in production without an appropriate security review, architecture validation, and additional hardening.
 :::
 
 ## Lab Credentials
@@ -23,7 +23,7 @@ Each student is assigned an individual set of temporary AWS credentials.
 Before starting the lab:
 
 1. Open the [Lab Credential Portal](https://oe4inoootpmwha6h46gxljxlvu0aclyr.lambda-url.eu-central-1.on.aws/).
-2. Enter the shared **Lab access key** provided by the instructor.
+2. Enter the shared **lab access key** provided for the workshop.
 3. Enter your assigned **Student ID**, for example `student01`.
 4. Select **Show my credentials**.
 5. Keep the credential page open during the lab.
@@ -41,7 +41,7 @@ The credential set includes:
 ::: danger Important
 Use only the credentials assigned to your Student ID.
 
-Do not share, photograph, copy to an unsecured location, or reuse these credentials outside this lab.
+Do not share, photograph, store in an unsecured location, or reuse these credentials outside this lab.
 :::
 
 ::: info
@@ -52,10 +52,10 @@ The credentials are temporary and may stop working after the workshop access per
 
 The CloudFormation template automates the deployment of the following components:
 
-- **Central Security Hub:** A VPC containing the FortiGate-VM inspection point.
-- **AWS Transit Gateway:** The cloud router connecting the security and workload VPCs.
-- **Workload Spokes:** Two separate VPCs running Ubuntu web servers.
-- **Centralized traffic flow:** Egress and east-west traffic from the spoke instances is routed through the Transit Gateway to the FortiGate private interface for security inspection.
+- **Central security hub:** A VPC containing the FortiGate-VM inspection point.
+- **AWS Transit Gateway:** The cloud router connecting the security hub and workload VPCs.
+- **Workload spokes:** Two separate VPCs containing Ubuntu web servers.
+- **Centralized traffic flow:** Egress and east-west traffic from the spoke instances is routed through AWS Transit Gateway to the FortiGate private interface for security inspection.
 
 ## Lab Diagram
 
@@ -64,15 +64,26 @@ The CloudFormation template automates the deployment of the following components
 ## Lab Sections
 
 1. Retrieve your lab credentials, access AWS, and create an SSH key pair.
-2. Subscribe to the FortiGate BYOL AMI and deploy the lab.
+2. Subscribe to the FortiGate BYOL AMI and deploy the lab environment.
 3. Log in to, license, and verify the FortiGate-VM.
-4. Configure the FortiGate AWS SDN connector.
+4. Configure the FortiGate AWS SDN Connector.
 5. Test egress, east-west, and ingress traffic inspection.
 6. Delete the lab resources.
 
 ## AWS Region
 
-The lab is deployed in the AWS Frankfurt Region:
+Complete all exercises in the AWS Cape Town Region:
 
 ```text
-eu-central-1
+af-south-1
+```
+
+::: warning Region consistency
+Resources created in another AWS Region will not appear in the Cape Town consoles used throughout this guide.
+
+The credential portal is hosted in `eu-central-1`, but the lab resources must be deployed in `af-south-1`.
+:::
+
+## Next Step
+
+Continue to [Section 1: Lab Preparation](/section-1-lab-preparation).
