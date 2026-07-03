@@ -74,6 +74,7 @@
   height: auto;
 }
 
+/* Larger FortiGate existing-policy screenshot */
 .vp-doc img[alt="Preconfigured FortiGate egress firewall policy"] {
   display: block;
   width: min(1000px, calc(100vw - 360px));
@@ -83,6 +84,18 @@
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
+/* Keep the image responsive on tablets and phones */
+@media (max-width: 959px) {
+  .vp-doc img[alt="Preconfigured FortiGate egress firewall policy"] {
+    width: 100%;
+    max-width: 100%;
+    left: auto;
+    transform: none;
+  }
+}
 
