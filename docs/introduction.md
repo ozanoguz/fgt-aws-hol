@@ -72,16 +72,14 @@ The CloudFormation template automates the deployment of the following components
 
 ## AWS Region
 
-Complete all exercises in the AWS Cape Town Region:
+Complete all exercises in the AWS Frankfurt Region:
 
 ```text
-af-south-1
+eu-central-1
 ```
 
 ::: warning Region consistency
-Resources created in another AWS Region will not appear in the Cape Town consoles used throughout this guide.
-
-The credential portal is hosted in `eu-central-1`, but the lab resources must be deployed in `af-south-1`.
+Resources created in another AWS Region will not appear in the Frankfurt consoles used throughout this guide.
 :::
 
 ## Next Step
