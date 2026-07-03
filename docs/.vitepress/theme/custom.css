@@ -1,0 +1,39 @@
+/* Give the home-page hero more horizontal space */
+.VPHomeHero .container {
+  max-width: 1280px;
+}
+
+/* Increase the width available to the hero text */
+.VPHomeHero .main {
+  max-width: 900px;
+}
+
+/* Allow the main heading to use longer lines */
+.VPHomeHero .text {
+  max-width: 900px;
+}
+
+/* Allow the description to use more horizontal space */
+.VPHomeHero .tagline {
+  max-width: 850px;
+}
+
+/* Improve spacing around the hero section */
+.VPHomeHero {
+  padding-top: 96px;
+  padding-bottom: 72px;
+}
+
+/* Keep the layout suitable for smaller screens */
+@media (max-width: 767px) {
+  .VPHomeHero {
+    padding-top: 64px;
+    padding-bottom: 48px;
+  }
+
+  .VPHomeHero .main,
+  .VPHomeHero .text,
+  .VPHomeHero .tagline {
+    max-width: 100%;
+  }
+}

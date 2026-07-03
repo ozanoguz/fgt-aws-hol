@@ -2,16 +2,13 @@
 layout: home
 
 hero:
-  name: AWS FortiGate Hands-On Lab
-  text: Secure AWS Hub-and-Spoke Networks with FortiGate
+  name: AWS FortiGate
+  text: Secure AWS Hub-and-Spoke Networks
   tagline: Deploy FortiGate-VM, AWS Transit Gateway, workload VPCs, dynamic cloud objects, and centralized traffic inspection.
   actions:
     - theme: brand
       text: Start Lab
       link: /introduction
-    - theme: alt
-      text: View on GitHub
-      link: https://github.com/ozanoguz/fgt-aws-hol
 
 features:
   - title: FortiGate on AWS
