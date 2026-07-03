@@ -29,19 +29,32 @@ Your browser may display a certificate warning because the FortiGate initially u
 
 ## 3.2 Activate the FortiGate License
 
-1. Obtain the FortiFlex token assigned to your lab environment.
+1. Return to the credential portal page opened in Section 1.
 
-2. In the FortiGate GUI, use the token-based licensing option to activate the FortiGate-VM.
+2. Copy the **FortiFlex token** assigned to your Student ID.
+
+3. Note the **FortiGate serial number** displayed in the portal. You will use it to confirm that you are activating the entitlement assigned to your lab environment.
+
+4. In the FortiGate GUI, select the token-based licensing option and paste your assigned FortiFlex token.
 
    ![Activate FortiGate using a FortiFlex token](/images/flextoken.jpg)
 
-3. Confirm the reboot when prompted.
+5. Before completing activation, verify that the entitlement or appliance information corresponds to the **FortiGate serial number** shown in your credential portal.
+
+::: danger Important
+Do not use another student's FortiFlex token or FortiGate serial number. Each token and serial-number assignment belongs to one lab record.
+:::
+
+6. Confirm the reboot when prompted.
 
    ![FortiGate reboot confirmation](/images/fgtreboot.jpg)
 
-4. Allow several minutes for the FortiGate to restart.
+7. Allow several minutes for the FortiGate to restart.
 
-5. Log in again and confirm that the FortiGate displays a valid serial number and licensed status.
+8. Log in again and confirm that:
+
+   - The FortiGate displays a valid licensed status.
+   - The displayed FortiGate serial number matches the **FortiGate serial number** assigned to you in the credential portal.
 
    ![FortiGate licensed status](/images/fgtlicensevalid.jpg)
 

@@ -18,7 +18,7 @@ This environment is intended only for hands-on workshops and demonstrations. Do 
 
 ## Lab Credentials
 
-Each student is assigned an individual set of temporary AWS credentials.
+Each student is assigned an individual set of temporary AWS credentials and FortiGate licensing information.
 
 Before starting the lab:
 
@@ -28,7 +28,7 @@ Before starting the lab:
 4. Select **Show my credentials**.
 5. Keep the credential page open during the lab.
 
-The portal displays only the credentials assigned to the submitted Student ID.
+The portal displays only the record assigned to the submitted Student ID.
 
 The credential set includes:
 
@@ -37,15 +37,17 @@ The credential set includes:
 - AWS Console password
 - AWS access key ID
 - AWS secret access key
+- FortiFlex token
+- FortiGate serial number
 
 ::: danger Important
-Use only the credentials assigned to your Student ID.
+Use only the credentials and license information assigned to your Student ID.
 
-Do not share, photograph, store in an unsecured location, or reuse these credentials outside this lab.
+Do not share, photograph, store in an unsecured location, or reuse these values outside this lab.
 :::
 
 ::: info
-The credentials are temporary and may stop working after the workshop access period ends.
+The credentials and FortiFlex entitlement are temporary and may stop working after the workshop access period ends.
 :::
 
 ## Lab Architecture
@@ -63,7 +65,7 @@ The CloudFormation template automates the deployment of the following components
 
 ## Lab Sections
 
-1. Retrieve your lab credentials, access AWS, and create an SSH key pair.
+1. Retrieve your lab credentials and licensing information, access AWS, and create an SSH key pair.
 2. Subscribe to the FortiGate BYOL AMI and deploy the lab environment.
 3. Log in to, license, and verify the FortiGate-VM.
 4. Configure the FortiGate AWS SDN Connector.

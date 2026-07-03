@@ -11,9 +11,9 @@ Enter:
 
 Select **Show my credentials**.
 
-The portal displays only the credential record assigned to your Student ID.
+The portal displays only the credential record assigned to your Student ID. Keep the credential page open during the lab.
 
-Keep the credential page open during the lab. You will use the following values:
+You will use the following values:
 
 | Credential | Used for |
 |---|---|
@@ -22,15 +22,17 @@ Keep the credential page open during the lab. You will use the following values:
 | AWS Console password | AWS Console sign-in |
 | AWS access key ID | AWS CLI or API authentication |
 | AWS secret access key | AWS CLI or API authentication |
+| FortiFlex token | FortiGate-VM license activation |
+| FortiGate serial number | Confirming that the correct FortiFlex entitlement is assigned and verifying the licensed appliance |
 
 ::: danger Important
-Use only the credentials assigned to your Student ID.
+Use only the credentials and license information assigned to your Student ID.
 
-Do not share, photograph, copy to an unsecured location, or reuse these credentials outside this lab.
+Do not share, photograph, copy to an unsecured location, or reuse these values outside this lab.
 :::
 
 ::: tip
-Use the **Copy** button beside a credential when available to avoid typing errors.
+Use the **Copy** button beside a value when available to avoid typing errors.
 :::
 
 ## 1.2 Access the AWS Console
@@ -52,7 +54,6 @@ Use only the student account assigned to you for this workshop.
 :::
 
 After signing in, confirm that the selected AWS Region is **Frankfurt (`eu-central-1`)**.
-
 
 ## 1.3 Create an SSH Key Pair
 
@@ -90,3 +91,4 @@ On macOS or Linux, restrict access to the private key:
 
 ```bash
 chmod 400 student01-key.pem
+```
