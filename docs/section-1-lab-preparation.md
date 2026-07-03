@@ -55,7 +55,7 @@ Log in using the values displayed in the credential portal:
 Use only the student account assigned to you for this workshop.
 :::
 
-After signing in, confirm that the selected AWS Region is **Cape Town (`af-south-1`)**.
+After signing in, confirm that the selected AWS Region is **Frankfurt (`eu-central-1`)**.
 
 ![Select the AWS Cape Town Region](/images/selectregion.jpg)
 

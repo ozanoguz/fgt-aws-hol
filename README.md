@@ -33,7 +33,7 @@ Log in to the AWS Management Console using the provided link. Lab credentials ar
 
 You will need an SSH key pair to securely access the EC2 instances (Spoke VMs).
 
-1. Ensure you are in the **Cape Town region (af-south-1)**.
+1. Ensure you are in the ** region (eu-central-1)**.
 
 <img src=https://github.com/ozanoguz/aws-fortigate-hol/blob/main/images/selectregion.jpg width="300"/>
 
@@ -88,9 +88,9 @@ You will need an SSH key pair to securely access the EC2 instances (Spoke VMs).
 
 | **Description** | **1-Button Deployment** |
 |-----------------|--------------------------|
-| **FortiGate-VM Hub & Spoke Lab** | [![Launch Stack](https://github.com/40net-cloud/fortinet-aws-solutions/blob/master/FortiGate/Active-Passive-Multi-Zone/images/aws_cft_image.png)](https://console.aws.amazon.com/cloudformation/home?region=af-south-1#/stacks/create/review?templateURL=https://ftnt-cfts.s3.amazonaws.com/training/Cape_Town_HoL_CFT.yaml&stackName=FortiGate-Hub-and-Spoke-Lab) |
+| **FortiGate-VM Hub & Spoke Lab** | [![Launch Stack](https://github.com/40net-cloud/fortinet-aws-solutions/blob/master/FortiGate/Active-Passive-Multi-Zone/images/aws_cft_image.png)](https://console.aws.amazon.com/cloudformation/home?region=eu-central-1#/stacks/create/review?templateURL=https://ftnt-cfts.s3.amazonaws.com/training/Cape_Town_HoL_CFT.yaml&stackName=FortiGate-Hub-and-Spoke-Lab) |
 
-3.  AWS Cape Town region (af-south-1) is preselected.
+3.  AWS Frankfurt region (eu-central-1) is preselected.
 4.  **Parameters to Configure:**
     * **Stack Name:** Enter your student-ID `Student01`
     * **KeyPair:** Select your existing SSH key created in **Section 1.2** above.

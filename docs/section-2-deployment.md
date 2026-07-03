@@ -30,10 +30,10 @@ Before deploying the CloudFormation stack, subscribe to the FortiGate BYOL AMI i
 
    > The original guide uses a one-click **Launch Stack** button. Add the exact CloudFormation template URL to this page when available.
 
-3. Confirm that the AWS Cape Town Region is selected:
+3. Confirm that the AWS Frankfurt Region is selected:
 
    ```text
-   af-south-1
+   eu-central-1
    ```
 
 4. Configure the stack parameters:
