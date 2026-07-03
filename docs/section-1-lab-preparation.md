@@ -53,7 +53,6 @@ Use only the student account assigned to you for this workshop.
 
 After signing in, confirm that the selected AWS Region is **Frankfurt (`eu-central-1`)**.
 
-![Select the AWS Cape Town Region](/images/selectregion.jpg)
 
 ## 1.3 Create an SSH Key Pair
 
@@ -61,7 +60,7 @@ You need an SSH key pair to securely access the EC2 instances deployed in the sp
 
 1. In the AWS Console search bar, enter **Key pairs**, and open **EC2 > Key pairs**.
 
-   ![Search for EC2 key pairs](/images/selectkeypairs.jpg)
+   ![Search for EC2 key pairs](/images/selectkeypairs.jpg width="400"/)
 
 2. Select **Create key pair**.
 
