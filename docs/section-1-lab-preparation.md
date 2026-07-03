@@ -6,7 +6,7 @@
 
 ## 1.1 Retrieve Your Lab Credentials
 
-Open the [Lab Credential Portal](YOUR_LAMBDA_FUNCTION_URL).
+Open the [Lab Credential Portal](https://oe4inoootpmwha6h46gxljxlvu0aclyr.lambda-url.eu-central-1.on.aws/).
 
 Enter:
 
