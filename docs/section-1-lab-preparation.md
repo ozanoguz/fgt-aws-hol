@@ -1,7 +1,3 @@
-
-## `docs/section-1-lab-preparation.md`
-
-```markdown
 # Section 1: Lab Preparation
 
 ## 1.1 Retrieve Your Lab Credentials
