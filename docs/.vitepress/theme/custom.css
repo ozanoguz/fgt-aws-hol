@@ -37,3 +37,9 @@
     max-width: 100%;
   }
 }
+
+.vp-doc img[alt="Search for EC2 key pairs"] {
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+}

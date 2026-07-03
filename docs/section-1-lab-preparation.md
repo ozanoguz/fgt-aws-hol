@@ -60,7 +60,7 @@ You need an SSH key pair to securely access the EC2 instances deployed in the sp
 
 1. In the AWS Console search bar, enter **Key pairs**, and open **EC2 > Key pairs**.
 
-   ![Search for EC2 key pairs](/images/selectkeypairs.jpg width="400"/)
+   ![Search for EC2 key pairs](/images/selectkeypairs.jpg)
 
 2. Select **Create key pair**.
 
