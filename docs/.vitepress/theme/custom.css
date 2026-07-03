@@ -73,3 +73,11 @@
   max-width: 100%;
   height: auto;
 }
+
+.vp-doc img[alt="Preconfigured FortiGate egress firewall policy"] {
+  width: 800px;
+  max-width: 100%;
+  height: auto;
+}
+
+
