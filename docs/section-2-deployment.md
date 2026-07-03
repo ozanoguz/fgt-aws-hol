@@ -4,7 +4,7 @@
 
 Before deploying the CloudFormation stack, subscribe to the FortiGate BYOL AMI in AWS Marketplace.
 
-1. Open the [FortiGate BYOL Marketplace listing](https://aws.amazon.com/marketplace/pp/prodview-wory773oau6wq).
+1. Open the [FortiGate BYOL Marketplace listing](https://aws.amazon.com/marketplace/pp?sku=dlaioq277sglm5mw1y1dmeuqa).
 
 2. Select **View purchase options**.
 
