@@ -49,3 +49,9 @@
   max-width: 100%;
   height: auto;
 }
+
+.vp-doc img[alt="CloudFormation key pair parameter"] {
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+}
