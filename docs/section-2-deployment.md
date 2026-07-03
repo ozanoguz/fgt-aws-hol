@@ -28,7 +28,9 @@ Before deploying the CloudFormation stack, subscribe to the FortiGate BYOL AMI i
 
 2. Launch the CloudFormation template provided for the workshop.
 
-   > The original guide uses a one-click **Launch Stack** button. Add the exact CloudFormation template URL to this page when available.
+   [![Launch Stack](/images/launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=eu-central-1#/stacks/create/review?templateURL=https://ftnt-cfts.s3.amazonaws.com/training/Cape_Town_HoL_CFT.yaml&stackName=FortiGate-Hub-and-Spoke-Lab)
+
+   The button opens the AWS CloudFormation console in the Frankfurt Region and loads the workshop template automatically.
 
 3. Confirm that the AWS Frankfurt Region is selected:
 
