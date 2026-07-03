@@ -43,3 +43,9 @@
   max-width: 100%;
   height: auto;
 }
+
+.vp-doc img[alt="Create the EC2 key pair"] {
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+}
