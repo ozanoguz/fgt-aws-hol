@@ -71,8 +71,6 @@ Wait until the CloudFormation stack status changes to:
 CREATE_COMPLETE
 ```
 
-![CloudFormation stack deployment completed](/images/cftcomplete.jpg)
-
 Open the Amazon EC2 console and locate the FortiGate instance.
 
 Use the following initial credentials:
